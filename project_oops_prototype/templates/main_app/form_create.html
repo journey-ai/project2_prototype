@@ -1,0 +1,67 @@
+<html lang="ko">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_app/style3.css' %}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어디든 데려가드려요, 타닥</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+            font-family: 'Noto Serif KR', serif;
+        }
+        .button {
+            color: white;
+            background-color: olive;
+            font-size: 15px;
+            padding: 8px 8px;
+            border-radius: 4px;
+        }
+
+        .abs1 {
+            position:absolute;
+            left:52%;
+            top: 42%;
+            transform: translate(-50%, -50%);
+
+        }
+        .abs2 {
+            position:absolute;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .abs3 {
+            position:absolute;
+            left:51.5%;
+            top: 56%;
+            transform: translate(-50%, -50%);
+
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+</head>
+
+<>
+<div class="abs1 flex-row wrap" style="color:white; text-shadow: -4px 0 brown, 0 4px black, 4px 0 green, 0 -4px green;">
+    <h2>마음 속에 떠오르는 단어가 있나요?</h2>
+</div>
+
+
+<div class="abs2 flex-row wrap">
+<form action="" method="POST">
+  {% csrf_token %}
+  <table>
+    {{ form.as_table }}
+  </table>
+</div>
+  <div class="abs3 flex-row wrap">
+    <input class="button" type="submit" value="다 적었어요.">
+  </div>
+</form>
+
+</html>

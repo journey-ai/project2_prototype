@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_app/style.css' %}">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어디든 데려가드려요, 타닥</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+            font-family: 'Noto Serif KR', serif;
+        }
+        .title {
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
+            padding: 8px 13px;
+            border-radius: 8px;
+
+
+
+        .msg {
+
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+</head>
+
+
+<body>
+  <h1 style="color:black; text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;">도착했습니다.</h1>
+  <h2 style="color:black; text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;">당신이 꿈꿨던 장소, 바로 이 역에 있습니다.</h2>
+  <hr>
+  <a href="{% url 'createform' %}">한번 더 떠나볼까요?</a>
+</body>
